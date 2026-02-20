@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Port Scanner GUI - A tkinter-based TCP port scanner
+Port Scanner GUI - A GUI-based TCP port scanner
 Usage: python port_scanner_gui.py
 """
 
