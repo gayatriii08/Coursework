@@ -471,8 +471,6 @@ class PortScannerGUI:
         messagebox.showinfo("Exported", f"Results saved to:\n{path}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-
 def main():
     root = tk.Tk()
     app = PortScannerGUI(root)
