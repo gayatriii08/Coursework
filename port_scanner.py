@@ -253,7 +253,7 @@ class PortScannerGUI:
                                selectcolor=ENTRY_BG, activebackground=PANEL_BG,
                                activeforeground=TEXT_FG,
                                font=("Consolas", 9))
-
+    # ── Progress / status helpers ─────────────────────────────────────────────
     def _log(self, msg, tag=""):
         def _do():
             self.log.configure(state="normal")
