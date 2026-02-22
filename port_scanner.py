@@ -25,11 +25,12 @@ COMMON_SERVICES = {
     9200: "Elasticsearch", 9300: "Elasticsearch-Transport", 27017: "MongoDB"
 }
 
+# ── Colour theme ──────────────────────────────────────────────────────────────
 DARK_BG      = "#1e1e2e"
 PANEL_BG     = "#252536"
 ACCENT       = "#7c6af7"
 ACCENT_HOVER = "#9d8fff"
-GREEN        = "#50fa7b"
+GREEN        = "#fa50ca"
 RED          = "#ff5555"
 YELLOW       = "#f1fa8c"
 TEXT_FG      = "#cdd6f4"
