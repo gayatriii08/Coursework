@@ -244,7 +244,7 @@ class PortScannerGUI:
         self.log.tag_configure("error", foreground=RED)
         self.log.tag_configure("warn",  foreground=YELLOW)
 
-    # ─────────────────────────────────────────────── helpers ─────────────────
+     # ── Widget helpers ────────────────────────────────────────────────────────
 
     def _entry(self, parent, var, **kw):
         return tk.Entry(parent, textvariable=var, bg=ENTRY_BG, fg=TEXT_FG,
