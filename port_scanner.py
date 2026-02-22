@@ -81,7 +81,6 @@ class PortScannerGUI:
         cfg = tk.Frame(self.root, bg=PANEL_BG, padx=18, pady=14)
         cfg.pack(fill="x", padx=10, pady=(10, 0))
 
-        # Row 0 – target + threads
         tk.Label(cfg, text="Target Host", bg=PANEL_BG, fg=SUBTEXT,
                  font=("Consolas", 8)).grid(row=0, column=0, sticky="w")
         tk.Label(cfg, text="Threads", bg=PANEL_BG, fg=SUBTEXT,
