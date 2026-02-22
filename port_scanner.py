@@ -100,7 +100,7 @@ class PortScannerGUI:
         self._entry(cfg, self.timeout_var, width=8).grid(row=1, column=4, padx=(18, 0))
         self._entry(cfg, self.ports_var, width=30).grid(row=3, column=0, columnspan=2, sticky="ew")
 
-        # Quick-select port buttons
+         # ── Port preset buttons ───────────────────────────────────────────────
         btn_frame = tk.Frame(cfg, bg=PANEL_BG)
         btn_frame.grid(row=3, column=2, columnspan=4, padx=(18, 0), sticky="w")
         presets = [
