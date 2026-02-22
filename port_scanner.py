@@ -281,7 +281,7 @@ class PortScannerGUI:
                      f"{elapsed:.1f}s elapsed")
         self.root.after(0, _do)
 
-    # ──────────────────────────────────────────── scanning logic ──────────────
+        # ── Port parser ───────────────────────────────────────────────────────────
 
     def _parse_ports(self, port_str):
         ports = []
