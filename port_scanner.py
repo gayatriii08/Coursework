@@ -116,7 +116,7 @@ class PortScannerGUI:
                       command=lambda v=val: self.ports_var.set(v),
                       padx=8, pady=2).pack(side="left", padx=3)
 
-        # Row 4 – checkboxes
+        # ── Checkboxes ────────────────────────────────────────────────────────
         chk_frame = tk.Frame(cfg, bg=PANEL_BG)
         chk_frame.grid(row=4, column=0, columnspan=6, pady=(10, 0), sticky="w")
 
