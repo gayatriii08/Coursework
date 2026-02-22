@@ -87,20 +87,17 @@ class PortScannerGUI:
                  font=("Consolas", 8)).grid(row=0, column=2, sticky="w", padx=(18, 0))
         tk.Label(cfg, text="Timeout (s)", bg=PANEL_BG, fg=SUBTEXT,
                  font=("Consolas", 8)).grid(row=0, column=4, sticky="w", padx=(18, 0))
+        tk.Label(cfg, text="Ports", bg=PANEL_BG, fg=SUBTEXT,
+                 font=("Consolas", 8)).grid(row=2, column=0, sticky="w", pady=(10, 0))
 
         self.target_var = tk.StringVar(value="scanme.nmap.org")
         self.threads_var = tk.StringVar(value="100")
         self.timeout_var = tk.StringVar(value="1.0")
+        self.ports_var = tk.StringVar(value="1-1024")
 
         self._entry(cfg, self.target_var, width=30).grid(row=1, column=0, columnspan=2, sticky="ew")
         self._entry(cfg, self.threads_var, width=8).grid(row=1, column=2, padx=(18, 0))
         self._entry(cfg, self.timeout_var, width=8).grid(row=1, column=4, padx=(18, 0))
-
-        # Row 2 – ports
-        tk.Label(cfg, text="Ports", bg=PANEL_BG, fg=SUBTEXT,
-                 font=("Consolas", 8)).grid(row=2, column=0, sticky="w", pady=(10, 0))
-
-        self.ports_var = tk.StringVar(value="1-1024")
         self._entry(cfg, self.ports_var, width=30).grid(row=3, column=0, columnspan=2, sticky="ew")
 
         # Quick-select port buttons
