@@ -30,7 +30,7 @@ DARK_BG      = "#1e1e2e"
 PANEL_BG     = "#252536"
 ACCENT       = "#7c6af7"
 ACCENT_HOVER = "#9d8fff"
-Pink        = "#fa50ca"
+PINK        = "#fa50ca"
 RED          = "#ff5555"
 YELLOW       = "#f1fa8c"
 TEXT_FG      = "#cdd6f4"
@@ -209,7 +209,7 @@ class PortScannerGUI:
         self.tree.column("status",  width=80,  stretch=False)
         self.tree.column("banner",  width=400, stretch=True)
 
-        self.tree.tag_configure("open",   foreground=Pink)
+        self.tree.tag_configure("open",   foreground=PINK)
         self.tree.tag_configure("closed", foreground=SUBTEXT)
 
         vsb = ttk.Scrollbar(table_frame, orient="vertical",   command=self.tree.yview)
@@ -235,7 +235,7 @@ class PortScannerGUI:
                                               relief="flat", state="disabled",
                                               insertbackground=TEXT_FG)
         self.log.pack(fill="x")
-        self.log.tag_configure("open",  foreground=Pink)
+        self.log.tag_configure("open",  foreground=PINK)
         self.log.tag_configure("info",  foreground=ACCENT)
         self.log.tag_configure("error", foreground=RED)
         self.log.tag_configure("warn",  foreground=YELLOW)
@@ -368,7 +368,7 @@ class PortScannerGUI:
             found = sorted(self.open_ports)
             if found:
                 self._log(f"Done in {elapsed:.2f}s  –  Open ports: {', '.join(map(str, found))}", "info")
-                self._set_status(f"Done – {len(found)} open port(s)", Pink)
+                self._set_status(f"Done – {len(found)} open port(s)", PINK)
             else:
                 self._log(f"Done in {elapsed:.2f}s  –  No open ports found.", "warn")
                 self._set_status("Done – no open ports", YELLOW)
