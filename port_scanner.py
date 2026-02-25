@@ -339,6 +339,8 @@ class PortScannerGUI:
             self.tree.yview_moveto(1)
         self.root.after(0, _do)
 
+ # ── Threading ─────────────────────────────────────────────────────────────
+
     def _worker(self, ip, timeout, grab_banners):
         while self.scanning:
             try:
