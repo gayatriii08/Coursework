@@ -293,6 +293,8 @@ class PortScannerGUI:
             else:
                 ports.append(int(part))
         return sorted(set(p for p in ports if 1 <= p <= 65535))
+    
+ # ── Banner grabbing ───────────────────────────────────────────────────────
 
     def _grab_banner(self, ip, port, timeout):
         try:
