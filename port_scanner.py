@@ -472,6 +472,7 @@ class PortScannerGUI:
         self._log(f"Results saved to: {path}", "info")
         messagebox.showinfo("Exported", f"Results saved to:\n{path}")
 
+# ─────────────────────────────────────────────────────────────────────────────
 
 def main():
     root = tk.Tk()
