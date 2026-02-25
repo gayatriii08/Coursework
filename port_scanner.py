@@ -308,6 +308,8 @@ class PortScannerGUI:
             return banner[:120] if banner else ""
         except Exception:
             return ""
+        
+ # ── Core port scan ────────────────────────────────────────────────────────
 
     def _scan_port(self, ip, port, timeout, grab_banners):
         try:
