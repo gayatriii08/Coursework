@@ -412,7 +412,6 @@ class PortScannerGUI:
             messagebox.showerror("Resolution Failed", f"Cannot resolve host: {target}")
             return
 
-        # Reset state
         self._clear(keep_config=True)
         self.open_ports = []
         self.scanned_ports = 0
